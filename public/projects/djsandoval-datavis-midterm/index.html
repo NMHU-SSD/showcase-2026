@@ -23,7 +23,7 @@
   <title>Energy vs Popularity</title> <!-- browser tab title -->
 </head>
 
-<body class="container p-5">
+<body class="container p-2">
   <h1>Energy vs Popularity by Genre</h1>
   <p class="lead mb-5">
     This scatter plot shows the relationship between Spotify song energy and popularity.
@@ -46,7 +46,7 @@
       genres.forEach((g, i) => {
         map.set(g, palette[i % palette.length]); // cycle thru pallet colors
       });
-      return map;
+      return map; 
     }
 
     fetch('./spotify_clean.json') // load cleaned data
