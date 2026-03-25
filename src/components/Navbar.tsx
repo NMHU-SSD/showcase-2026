@@ -9,7 +9,7 @@ export default function Navbar() {
   return (
     <header className="w-full bg-primary text-white p-4">
       <div className="flex justify-between">
-        <Link to="/" className="logo">
+        <Link to="/" className=" font-mono">
           Student Show 2026
         </Link>
 

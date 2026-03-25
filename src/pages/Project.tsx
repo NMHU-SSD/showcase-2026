@@ -48,7 +48,7 @@ export default function ProjectPage() {
             <div className="card bg-secondary p-5 w-min-[400px] rounded">
               <h1 className="font-mono">{project.title}</h1>
               <p className="text-sm font-semibold">{project.student}</p>
-              <p className="text-sm mt-2">{project.description}</p>
+              <p className="text-xs mt-2">{project.description}</p>
             </div>
           ) : (
             <p>Project not found.</p>

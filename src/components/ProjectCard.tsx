@@ -14,9 +14,9 @@ export default function ProjectCard({ project }: { project: Project }) {
         )}
       </div>
 
-      <h1 className="font-mono">{project.title}</h1>
+      <h1 className=" font-mono">{project.title}</h1>
       <p className="text-sm font-semibold">{project.student}</p>
-      <p className="text-sm mt-2">{project.description}</p>
+      <p className="text-xs mt-2">{project.description}</p>
 
       <a
         href={`/project/${project.slug}`}
