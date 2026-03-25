@@ -1,6 +1,8 @@
 import { Image } from "lucide-react";
 
-export default function ProjectCard({ project }) {
+import { Project } from "../pages/Project";
+
+export default function ProjectCard({ project }: { project: Project }) {
   return (
     <div className="card bg-secondary p-5 w-min-[400px] rounded">
 

@@ -1,8 +1,8 @@
 import { createContext, useContext, useEffect, useMemo, useState } from "react";
 
-const ThemeContext = createContext(null);
+const ThemeContext = createContext<{ darkMode: boolean; toggleDarkMode: () => void } | null>(null);
 
-export function ThemeProvider({ children }) {
+export function ThemeProvider({ children }: { children: React.ReactNode }) {
   const [darkMode, setDarkMode] = useState(() => {
     const saved = localStorage.getItem("darkMode");
     return saved ? JSON.parse(saved) : true;
@@ -16,7 +16,7 @@ export function ThemeProvider({ children }) {
   const value = useMemo(
     () => ({
       darkMode,
-      toggleDarkMode: () => setDarkMode((prev) => !prev),
+      toggleDarkMode: () => setDarkMode((prev: boolean) => !prev),
     }),
     [darkMode]
   );
@@ -25,5 +25,9 @@ export function ThemeProvider({ children }) {
 }
 
 export function useTheme() {
-  return useContext(ThemeContext);
+  const context = useContext(ThemeContext);
+  if (!context) {
+    throw new Error("useTheme must be used within a ThemeProvider");
+  }
+  return context;
 }

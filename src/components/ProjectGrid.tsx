@@ -1,6 +1,8 @@
 import ProjectCard from "./ProjectCard";
 
-export default function ProjectGrid({ projects }) {
+import { Project } from "../pages/Project";
+
+export default function ProjectGrid({ projects }: { projects: Project[] }) {
   return (
     <section className="container">
 
