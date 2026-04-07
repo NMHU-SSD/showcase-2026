@@ -6,6 +6,14 @@
     "student": "DJ Sandoval",
     "file": "/projects/djsandoval-datavis-midterm/index.html",
     "thumbnail": "/projects/djsandoval-datavis-midterm/screenshot.png"
+  },
+  {
+    "slug": "dataviz-assignment",
+    "title": "USGS Earthquake Data Visualization",
+    "description": "html, css, javascript (leaflet.js)",
+    "student": "DJ Sandoval",
+    "file": "/projects/djsandoval-hw8/index.html",
+    "thumbnail": "/projects/djsandoval-hw8/screenshot.png"
   }
   
 ]
