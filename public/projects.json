@@ -4,16 +4,52 @@
     "title": "Spotify Data Visualization",
     "description": "html, css, javascript (charts.js)",
     "student": "DJ Sandoval",
+    "course": "BSSD 4540 Data Visualization",
     "file": "/projects/djsandoval-datavis-midterm/index.html",
-    "thumbnail": "/projects/djsandoval-datavis-midterm/screenshot.png"
+    "thumbnail": "/projects/djsandoval-datavis-midterm/screenshot.png",
+    "openInNewTab": false
   },
   {
     "slug": "dataviz-assignment",
     "title": "USGS Earthquake Data Visualization",
     "description": "html, css, javascript (leaflet.js)",
     "student": "DJ Sandoval",
+    "course": "BSSD 4540 Data Visualization",
     "file": "/projects/djsandoval-hw8/index.html",
-    "thumbnail": "/projects/djsandoval-hw8/screenshot.png"
+    "thumbnail": "/projects/djsandoval-hw8/screenshot.png",
+    "openInNewTab": false
+
+  },
+  {
+    "slug": "dataviz-final",
+    "title": "Home Run Park Effects",
+    "description": "html, css, javascript (chart.js)",
+    "student": "DJ Sandoval",
+    "course": "BSSD 4540 Data Visualization",
+    "file": "/projects/djsandoval-dataviz-final/index.html",
+    "thumbnail": "",
+    "openInNewTab": false
+
+  },
+  {
+    "slug": "ag-midterm",
+    "title": "Midterm Project - Unity 2d game",
+    "description": "Use arrow keys to move and jump",
+    "student": "Alex Gilliam",
+    "course": "BSSD 4150 Game Development",
+    "file": "https://alexgilliam126.github.io/AG-WebGLTestBuild/",
+    "thumbnail": "/projects/games/ag-midterm.png",
+    "openInNewTab": true
+
+  },
+  {
+    "slug": "co-midterm",
+    "title": "Midterm Project - Unity 2d game",
+    "description": "Use mouse to click",
+    "student": "Christopher Ortiz",
+    "course": "BSSD 4150 Game Development",
+    "file": "https://play.unity.com/en/games/a833316e-4a1e-4d7f-8c7b-2805132f2193/co-bssd4150-midterm",
+    "thumbnail": "/projects/games/co-midterm.png",
+    "openInNewTab": true
   }
-  
 ]

@@ -7,8 +7,10 @@ export type Project = {
   title: string;
   student: string;
   description: string;
+  course: string;
   file: string;
   thumbnail?: string;
+  openInNewTab?: boolean;
 };
 
 export default function ProjectPage() {
@@ -42,28 +44,35 @@ export default function ProjectPage() {
             ← Back to projects
           </Link>
 
-          {loading ? (
+        </div>
+
+        <div className="flex justify-between gap-4">
+        {loading ? (
             <p>Loading project...</p>
           ) : project ? (
-            <div className="card bg-secondary p-5 w-min-[400px] rounded">
-              <h1 className="font-mono">{project.title}</h1>
+            <div className="card bg-secondary p-5 w-min-[600px] rounded overflow-hidden max-h-min">
+              <p className="text-sm font-semibold mb-3 text-primary">{project.course}</p>
+              <h1 className="text-sm font-mono">{project.title}</h1>
               <p className="text-sm font-semibold">{project.student}</p>
               <p className="text-xs mt-2">{project.description}</p>
             </div>
           ) : (
             <p>Project not found.</p>
           )}
-        </div>
 
         {!loading && project && (
-          <div className="w-full mt-8 min-h-[600px] overflow-hidden ">
-            <iframe
+          <div className="w-full mx-auto min-h-[700px] overflow-hidden ">
+            <iframe 
+              allow="clipboard-read; clipboard-write; fullscreen; autoplay; encrypted-media; picture-in-picture"
+              sandbox="allow-scripts allow-forms allow-same-origin allow-modals allow-popups allow-popups-to-escape-sandbox"
               src={project.file}
               title={project.title}
-              className="w-2/3 min-h-[600px] mx-auto border border-gray-100 rounded"
+              className="w-full min-h-[700px] mx-auto border border-gray-100 rounded"
             />
           </div>
         )}
+
+        </div>
       </main>
     </>
   );
