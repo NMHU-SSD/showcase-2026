@@ -46,7 +46,7 @@ export default function ProjectPage() {
 
         </div>
 
-        <div className="flex justify-between gap-4">
+        <div className="flex justify-between gap-4 flex-col md:flex-row">
         {loading ? (
             <p>Loading project...</p>
           ) : project ? (

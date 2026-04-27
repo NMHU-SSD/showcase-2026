@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Block Space Shooter</title>
+    <style>
+        body {
+            margin: 0;
+            background: rgb(138, 138, 138);
+            overflow: hidden;
+			padding: 50px;
+        }
+
+        canvas {
+            display: block;
+            margin: auto;
+            background: #111;
+        }
+		
+		.center {
+		  display: flex;
+		  justify-content: center;
+		  align-items: center;
+		}
+    </style>
+</head>
+<body>
+
+<canvas id="gameCanvas" width="600" height="500"></canvas>
+<p class="center">Use Arrows to move and Space bar to Shoot</p>
+
+<script src="main.js"></script>
+<script src="draw_cnvas.js"></script>
+</body>
+</html>

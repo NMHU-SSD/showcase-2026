@@ -18,7 +18,6 @@
     "file": "/projects/djsandoval-hw8/index.html",
     "thumbnail": "/projects/djsandoval-hw8/screenshot.png",
     "openInNewTab": false
-
   },
   {
     "slug": "dataviz-final",
@@ -29,7 +28,46 @@
     "file": "/projects/djsandoval-dataviz-final/index.html",
     "thumbnail": "",
     "openInNewTab": false
-
+  },
+  {
+    "slug": "brandonleebaca-midterm",
+    "title": "Midterm Project",
+    "description": "Anime API viewer",
+    "student": "Brandon Lee Baca",
+    "course": "CSCI 4630 Web Programming",
+    "file": "/projects/brandonleebaca-midterm/index.html",
+    "thumbnail": "/projects/brandonleebaca-midterm/screenshot.png",
+    "openInNewTab": false
+  },
+  {
+    "slug": "luisdeniz-midterm",
+    "title": "Midterm Project",
+    "description": "Asteroids canvas game",
+    "student": "Luis Deniz",
+    "course": "CSCI 4630 Web Programming",
+    "file": "/projects/luisdeniz-midterm/index.html",
+    "thumbnail": "/projects/luisdeniz-midterm/screenshot.png",
+    "openInNewTab": false
+  },
+  {
+    "slug": "ricomontoya-midterm",
+    "title": "Midterm Project",
+    "description": "Madlibs generator",
+    "student": "Rico Montoya",
+    "course": "CSCI 4630 Web Programming",
+    "file": "/projects/ricomontoya-midterm/index.html",
+    "thumbnail": "/projects/ricomontoya-midterm/screenshot.png",
+    "openInNewTab": false
+  },
+  {
+    "slug": "colehorne-midterm",
+    "title": "Midterm Project",
+    "description": "Canvas platformer game",
+    "student": "Cole Horne",
+    "course": "CSCI 4630 Web Programming",
+    "file": "/projects/colehorne-midterm/index.html",
+    "thumbnail": "/projects/colehorne-midterm/screenshot.png",
+    "openInNewTab": false
   },
   {
     "slug": "ag-midterm",
@@ -40,7 +78,6 @@
     "file": "https://alexgilliam126.github.io/AG-WebGLTestBuild/",
     "thumbnail": "/projects/games/ag-midterm.png",
     "openInNewTab": true
-
   },
   {
     "slug": "co-midterm",

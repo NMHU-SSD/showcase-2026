@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<style>
+canvas {
+    border:1px solid #d3d3d3;
+    background-color: #f1f1f1;
+    text-align: center;
+	display: flex;
+	justify-content: center;
+	justify-self: center;
+}
+
+.center{
+	display: flex;
+	justify-content: center;
+	justify-self: center;
+}
+</style>
+</head>
+<body onload="startGame()">
+	<p class="center">Reach the top. Use space to jump, arrows to move.</p>
+
+<script>
+
+var player;
+var myPlatforms = [];
+var gameOver = false;
+
+
+function startGame() {
+    myGameArea.start();
+    player = new playerInst(30, 30, "red", 80, 450);
+    myPlatforms.push(new platform(100, 5, "blue", 10, 590))
+    myPlatforms.push(new platform(100, 5, "green", 500, 500))
+    myPlatforms.push(new platform(50, 5, "blue", 250, 280))
+    myPlatforms.push(new platform(10, 5, "blue", 100, 80));
+}
+
+var myGameArea = {
+    canvas : document.createElement("canvas"),
+    start : function() {
+        this.canvas.width = 800;
+        this.canvas.height = 600;
+        this.context = this.canvas.getContext("2d");
+        document.body.insertBefore(this.canvas, document.body.childNodes[0]);
+        this.interval = setInterval(updateGameArea, 20);
+    window.addEventListener('keydown', function (e) {
+      myGameArea.key = e.keyCode;
+    })
+    window.addEventListener('keyup', function (e) {
+      myGameArea.key = false;
+    })
+},
+    stop : function() {
+        clearInterval(this.interval);
+    },    
+    clear : function() {
+        this.context.clearRect(0, 0, this.canvas.width, this.canvas.height);
+    }
+}
+
+function playerInst(width, height, color, x, y, type) {
+    this.type = type;
+    this.width = width;
+    this.height = height;
+    this.x = x;
+    this.y = y;    
+    this.speedX = 0;
+    this.speedY = 0;    
+    this.gravity = 0.08;
+    this.gravitySpeed = 0;
+    this.jump = true;
+    this.onGround = false;
+    this.update = function() {
+        ctx = myGameArea.context;
+        ctx.fillStyle = color;
+        ctx.fillRect(this.x, this.y, this.width, this.height);
+        
+    }
+    this.newPos = function() {
+        if(!player.onGround){
+        if (myGameArea.key && myGameArea.key == 37) {this.speedX = -5; }
+        if (myGameArea.key && myGameArea.key == 39) {this.speedX = 5; }
+        this.gravitySpeed += this.gravity;
+        this.x += this.speedX;
+        this.y += this.speedY + this.gravitySpeed;
+        this.hitBottom();
+        }
+        if(player.onGround) {
+            if (myGameArea.key && myGameArea.key == 32) {
+                player.jump = true;
+                player.onGround = false;
+                this.speedY += -6; }
+            if (myGameArea.key && myGameArea.key == 37) {this.speedX = -5; }
+            if (myGameArea.key && myGameArea.key == 39) {this.speedX = 5; }
+             this.x += this.speedX;
+             this.y += this.speedY;
+             this.gravitySpeed = 0;
+             this.speedX = 0;
+            
+        }
+        
+    }
+    this.hitBottom = function() {
+        var rockbottom = myGameArea.canvas.height - this.height;
+        if (this.y > rockbottom) {
+            this.y = rockbottom;
+            gameOver = true;
+        } else if (this.y <= rockbottom - rockbottom)
+            {
+                gameWon = true;
+            }
+    }
+    // this.hitTop = function() {
+    //     var rocktop = myGameArea.canvas.height - myGameArea.canvas.height;
+    //     if (this.y <= rocktop) {
+    //         this.y = rocktop;
+    //         var gameWon = true;
+    //     }
+    // }
+}
+
+
+function platform(width, height, color, x, y) {
+    this.width = width;
+    this.height = height;
+    this.x = x;
+    this.y = y;       
+    this.update = function() {
+        ctx = myGameArea.context;
+        ctx.fillStyle = color;
+        ctx.fillRect(this.x, this.y, this.width, this.height);
+        if(rectColliding(player, myPlatforms[i])) {
+            player.speedY = 0;
+            player.onGround = true;
+                player.y = myPlatforms[i].y - player.height;
+                player.newPos();
+                player.update();
+        } 
+        else {
+            player.onGround = false;
+        }
+    }
+     
+   
+}
+
+
+
+function rectColliding(r1, r2) {
+    while (
+        r1.x < r2.x + r2.width &&
+        r1.x + r1.width > r2.x &&
+        r1.y < r2.y + r2.height &&  
+        r1.height + r1.y > r2.y
+    ) {
+        return true;
+    } 
+}
+
+function updateGameArea() {
+    myGameArea.clear();
+
+    player.newPos();
+    player.update();
+    
+    for (i = 0; i < myPlatforms.length; i++) {
+
+        
+    
+        myPlatforms[i].update();
+        
+    }
+   
+ 
+    if (gameOver === true) { //check failure condition
+        myGameArea.stop();
+        alert("Game Over!");
+        gameOver = false;
+        startGame();
+    }
+    if (gameWon === true) { //check win condition
+        // myGameArea.stop();
+        alert("You Win!");
+        gameWon = false;
+        startGame();
+    }
+    myGameArea.clear();
+    // player.newPos();
+    // player.update();
+    // for (i in myPlatforms) {
+        
+    //     myPlatforms[i].update();
+    // }
+}
+
+</script>
+
+<p></p>
+
+</body>
+</html>

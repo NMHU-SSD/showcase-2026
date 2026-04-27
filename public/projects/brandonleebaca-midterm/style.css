@@ -1,0 +1,39 @@
+body {
+  font-family: 'Times New Roman', sans-serif;
+  padding: 20px;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 15px;
+}
+
+.card {
+  border: 1px solid #ccc;
+  padding: 10px;
+  text-align: center;
+}
+
+.card img {
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+}
+
+img#poster {
+  width: 300px;
+  display: block;
+  margin-bottom: 15px;
+}
+
+a {
+  display: inline-block;
+  margin-bottom: 15px;
+  text-decoration: none;
+  color: #127be4;
+}
+
+h2 {
+  margin-top: 25px;
+}

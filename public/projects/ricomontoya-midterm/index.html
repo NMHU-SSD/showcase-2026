@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mad Libs</title>
+    <link rel="stylesheet" href="stylesheet.css" />
+    <script defer src="main.js"></script>
+  </head>
+  <body>
+    <div class="wrap">
+      <h1>MAD LIBS</h1>
+      <p class="sub">Generate a story in 1 click.</p>
+
+      <form id="madlibForm">
+        <div class="grid">
+          <div class="field">
+            <label for="name">NAME</label>
+            <input id="name" type="text" required />
+          </div>
+
+          <div class="field">
+            <label for="celebrity">CELEBRITY</label>
+            <input id="celebrity" type="text" required />
+          </div>
+
+          <div class="field">
+            <label for="place">PLACE</label>
+            <input id="place" type="text" required />
+          </div>
+
+          <div class="field">
+            <label for="adjective">ADJECTIVE</label>
+            <input id="adjective" type="text" required />
+          </div>
+
+          <div class="field">
+            <label for="noun">NOUN</label>
+            <input id="noun" type="text" required />
+          </div>
+
+          <div class="field">
+            <label for="verb">VERB</label>
+            <input id="verb" type="text" required />
+          </div>
+
+          <div class="field">
+            <label for="number">NUMBER</label>
+            <input id="number" type="number" required />
+          </div>
+        </div>
+
+        <div class="buttons">
+          <button type="submit" id="submitBtn" class="linkBtn">SUBMIT</button>
+          <button type="button" id="resetBtn" class="linkBtn">RESET</button>
+        </div>
+      </form>
+
+      <div class="outputBox">
+        <h2 id="headline">HEADLINE</h2>
+        <p id="story">Fill out the form and hit submit.</p>
+      </div>
+    </div>
+  </body>
+</html>
