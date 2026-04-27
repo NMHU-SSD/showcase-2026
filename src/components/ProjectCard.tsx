@@ -6,7 +6,7 @@ export default function ProjectCard({ project }: { project: Project }) {
   return (
     <div className="card bg-secondary p-5 w-min-[400px] rounded">
 
-      <h1 className="text-sm font-semibold mb-3 text-primary">{project.course}</h1>
+      <h1 className="text-sm font-semibold mb-3 text-primary dark:text-accent">{project.course}</h1>
 
 
       <div className="project-thumb">

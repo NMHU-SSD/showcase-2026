@@ -51,7 +51,7 @@ export default function ProjectPage() {
             <p>Loading project...</p>
           ) : project ? (
             <div className="card bg-secondary p-5 w-min-[600px] rounded overflow-hidden max-h-min">
-              <p className="text-sm font-semibold mb-3 text-primary">{project.course}</p>
+              <p className="text-sm font-semibold mb-3 text-primary dark:text-accent">{project.course}</p>
               <h1 className="text-sm font-mono">{project.title}</h1>
               <p className="text-sm font-semibold">{project.student}</p>
               <p className="text-xs mt-2">{project.description}</p>
