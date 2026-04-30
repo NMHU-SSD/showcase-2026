@@ -2,23 +2,143 @@
 <html lang="en">
 
 <head>
-  <!-- Required meta tags -->
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta charset="utf-8"> <!-- sets character encoding -->
+  <meta name="viewport" content="width=device-width, initial-scale=1"> <!-- makes page responsive -->
+  <title>MLB Ballpark Home Run Factors</title>
 
-  <!-- Bootstrap CSS -->
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet">
+  <!-- import font -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
 
-  <title>Final</title> <!-- browser tab title -->
+  <!-- link CSS file -->
+  <link rel="stylesheet" href="styles.css">
 </head>
 
-<body class="container px-0 py-3">
-  <h1>Final Project</h1>
-  <p class="lead mb-5">
-    coming soon
-  </p>
+<body>
 
-  
+  <!-- page header -->
+  <header class="hero">
+    <div class="container">
+      <h1>MLB Ballpark Home Run Factors</h1>
+      <p>
+        This project compares MLB ballparks using home run park effect, elevation,
+        temperature, wall height, field dimensions, roof factor, and daytime factor.
+        Home run park effect uses 100 as league average. Values above 100 are more
+        home run friendly, while values below 100 are less home run friendly.
+      </p>
+    </div>
+  </header>
+
+  <main class="container">
+
+    <!-- first vis -->
+    <section class="card">
+      <h2>Highest Home Run Park Effect by Division</h2>
+      <p>
+        This chart shows the ballpark with the highest home run park effect from each MLB division.
+        This makes it easier to compare all six divisions at once.
+      </p>
+
+      <!-- canvas for first bar chart -->
+      <canvas id="topDivisionChart"></canvas>
+    </section>
+
+    <!-- second vis -->
+    <section class="card">
+      <h2>Compare Ballpark Features by Division</h2>
+      <p>
+        This chart uses the highest home run effect park from each division.
+        Use the dropdown to compare different features, such as elevation,
+        wall height, temperature, and field dimensions.
+      </p>
+
+      <div class="chart-control">
+        <label for="featureSelect">Select Feature</label>
+        <select id="featureSelect">
+          <option value="hr_park_effect">Home Run Park Effect</option>
+          <option value="elevation">Elevation</option>
+          <option value="avg_temp">Average Temperature</option>
+          <option value="min_wall_height">Minimum Wall Height</option>
+          <option value="max_wall_height">Maximum Wall Height</option>
+          <option value="left_field">Left Field Distance</option>
+          <option value="center_field">Center Field Distance</option>
+          <option value="right_field">Right Field Distance</option>
+          <option value="extra_distance">Extra Distance</option>
+          <option value="roof">Roof Factor</option>
+          <option value="daytime">Daytime Factor</option>
+        </select>
+      </div>
+
+      <!-- canvas for feature chart -->
+      <canvas id="featureChart"></canvas>
+    </section>
+
+    <!-- third vis -->
+    <section class="card">
+      <h2>Elevation vs Home Run Park Effect</h2>
+      <p>
+        This scatterplot shows all MLB ballparks by division. The horizontal line marks 100,
+        which is league average for home run park effect. Parks above that line are more
+        home run friendly.
+      </p>
+      
+<div class="chart-control">
+  <label for="scatterFeatureSelect">Select X-Axis Feature</label>
+  <select id="scatterFeatureSelect">
+    <option value="elevation">Elevation</option>
+    <option value="avg_temp">Average Temperature</option>
+    <option value="min_wall_height">Minimum Wall Height</option>
+    <option value="max_wall_height">Maximum Wall Height</option>
+    <option value="left_field">Left Field Distance</option>
+    <option value="center_field">Center Field Distance</option>
+    <option value="right_field">Right Field Distance</option>
+    <option value="extra_distance">Extra Distance</option>
+    <option value="roof">Roof Factor</option>
+    <option value="daytime">Daytime Factor</option>
+  </select>
+</div>
+      <!-- canvas for scatterplot -->
+      <canvas id="scatterChart"></canvas>
+    </section>
+
+    <!-- comparison tool -->
+    <section class="card">
+      <h2>Compare Two Ballparks</h2>
+
+      <div class="select-row">
+        <div>
+          <label for="parkOne">Ballpark 1</label>
+          <select id="parkOne"></select>
+        </div>
+
+        <div>
+          <label for="parkTwo">Ballpark 2</label>
+          <select id="parkTwo"></select>
+        </div>
+      </div>
+
+      <div id="comparisonBox" class="comparison-grid"></div>
+    </section>
+
+    <!-- dataset source -->
+    <footer>
+      <p>
+        Dataset source:
+        <a href="https://www.kaggle.com/datasets/paulrjohnson/mlb-ballparks" target="_blank">
+          MLB Ballparks Dataset
+        </a>
+      </p>
+    </footer>
+
+  </main>
+
+  <!-- Chart.js library -->
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+  <!-- PapaParse reads CSV files -->
+  <script src="https://cdn.jsdelivr.net/npm/papaparse@5.4.1/papaparse.min.js"></script>
+
+  <!-- custom JS file -->
+  <script src="./script.js"></script>
 
 </body>
 </html>

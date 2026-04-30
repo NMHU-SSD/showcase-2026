@@ -26,7 +26,7 @@
     "student": "DJ Sandoval",
     "course": "BSSD 4540 Data Visualization",
     "file": "/projects/djsandoval-dataviz-final/index.html",
-    "thumbnail": "",
+    "thumbnail": "/projects/djsandoval-dataviz-final/screenshot.png",
     "openInNewTab": false
   },
   {
@@ -88,5 +88,17 @@
     "file": "https://play.unity.com/en/games/a833316e-4a1e-4d7f-8c7b-2805132f2193/co-bssd4150-midterm",
     "thumbnail": "/projects/games/co-midterm.png",
     "openInNewTab": true
+  },
+  {
+    "slug": "co-final",
+    "title": "Final Project - Unity 2d game",
+    "description": "Use arrows to move",
+    "student": "Christopher Ortiz",
+    "course": "BSSD 4150 Game Development",
+    "file": "  https://play.unity.com/en/games/3694f5c8-a499-44fa-aa53-e7dad233c917/copsrobbers",
+    "thumbnail": "/projects/games/co-final.png",
+    "openInNewTab": true
   }
+
+
 ]
