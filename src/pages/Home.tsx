@@ -26,7 +26,7 @@ export default function HomePage() {
     <>
       <Navbar />
       <main className="w-full p-8 bg-background ">
-        <h1 className="text-6xl font-mono">Student Show 2026</h1>
+        <h1 className="text-6xl font-mono">Spring Show 2026</h1>
         <p className="text-3xl font-mono font-light mt-2 mb-12">
           Software Systems Design
         </p>

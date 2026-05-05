@@ -1,4 +1,3 @@
-import { Link } from "react-router-dom";
 import Navbar from "../components/Navbar";
 
 export default function ProjectPage({ title, url, videoProps }: { title: string; url: string, videoProps?: React.VideoHTMLAttributes<HTMLVideoElement> }) {
@@ -7,12 +6,6 @@ export default function ProjectPage({ title, url, videoProps }: { title: string;
     <>
       <Navbar />
       <main className="w-full p-8 bg-background">
-
-        <div className="flex flex-row justify-between mb-8">
-          <Link to="/" className="back-link">
-            ← Back to projects
-          </Link>
-        </div>
 
         <div className="flex w-full flex-col ">
 
