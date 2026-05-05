@@ -95,10 +95,28 @@
     "description": "Use arrows to move",
     "student": "Christopher Ortiz",
     "course": "BSSD 4150 Game Development",
-    "file": "  https://play.unity.com/en/games/3694f5c8-a499-44fa-aa53-e7dad233c917/copsrobbers",
+    "file": "https://play.unity.com/en/games/3694f5c8-a499-44fa-aa53-e7dad233c917/copsrobbers",
     "thumbnail": "/projects/games/co-final.png",
     "openInNewTab": true
+  },
+  {
+    "slug": "ag-final",
+    "title": "Final Project - Unity 2d game",
+    "description": "Use arrows to move, Space to jump",
+    "student": "Alex Gilliam",
+    "course": "BSSD 4150 Game Development",
+    "file": "https://alexgilliam126.github.io/AG-BSSD4140-FinalGame",
+    "thumbnail": "/projects/games/ag-final.png",
+    "openInNewTab": true
+  },
+  {
+    "slug": "jd-final",
+    "title": "Final Project - Unity 2d game",
+    "description": "Use arrows to move",
+    "student": "Jake Dekins",
+    "course": "BSSD 4150 Game Development",
+    "file": "https://play.unity.com/en/games/d8ad4849-6ae4-4242-ab98-a81a6a45fa64/junkyard-jam",
+    "thumbnail": "/projects/games/jd-final.png",
+    "openInNewTab": true
   }
-
-
 ]
