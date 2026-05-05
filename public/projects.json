@@ -5,6 +5,7 @@
     "description": "html, css, javascript (charts.js)",
     "student": "DJ Sandoval",
     "course": "BSSD 4540 Data Visualization",
+    "semester": "spring",
     "file": "/projects/djsandoval-datavis-midterm/index.html",
     "thumbnail": "/projects/djsandoval-datavis-midterm/screenshot.png",
     "openInNewTab": false
@@ -15,6 +16,7 @@
     "description": "html, css, javascript (leaflet.js)",
     "student": "DJ Sandoval",
     "course": "BSSD 4540 Data Visualization",
+    "semester": "spring",
     "file": "/projects/djsandoval-hw8/index.html",
     "thumbnail": "/projects/djsandoval-hw8/screenshot.png",
     "openInNewTab": false
@@ -25,6 +27,7 @@
     "description": "html, css, javascript (d3.js)",
     "student": "DJ Sandoval",
     "course": "BSSD 4540 Data Visualization",
+    "semester": "spring",
     "file": "https://observablehq.com/embed/09183072a4b25cea?cells=sunburst",
     "thumbnail": "/projects/djsandoval-hw10/sunburst.png",
     "openInNewTab": false
@@ -35,6 +38,7 @@
     "description": "html, css, javascript (chart.js)",
     "student": "DJ Sandoval",
     "course": "BSSD 4540 Data Visualization",
+    "semester": "spring",
     "file": "/projects/djsandoval-dataviz-final/index.html",
     "thumbnail": "/projects/djsandoval-dataviz-final/screenshot.png",
     "openInNewTab": false
@@ -45,6 +49,7 @@
     "description": "Anime API viewer",
     "student": "Brandon Lee Baca",
     "course": "CSCI 4630 Web Programming",
+    "semester": "spring",
     "file": "/projects/brandonleebaca-midterm/index.html",
     "thumbnail": "/projects/brandonleebaca-midterm/screenshot.png",
     "openInNewTab": false
@@ -55,6 +60,7 @@
     "description": "Asteroids canvas game",
     "student": "Luis Deniz",
     "course": "CSCI 4630 Web Programming",
+    "semester": "spring",
     "file": "/projects/luisdeniz-midterm/index.html",
     "thumbnail": "/projects/luisdeniz-midterm/screenshot.png",
     "openInNewTab": false
@@ -65,6 +71,7 @@
     "description": "Madlibs generator",
     "student": "Rico Montoya",
     "course": "CSCI 4630 Web Programming",
+    "semester": "spring",
     "file": "/projects/ricomontoya-midterm/index.html",
     "thumbnail": "/projects/ricomontoya-midterm/screenshot.png",
     "openInNewTab": false
@@ -75,6 +82,7 @@
     "description": "Canvas platformer game",
     "student": "Cole Horne",
     "course": "CSCI 4630 Web Programming",
+    "semester": "spring",
     "file": "/projects/colehorne-midterm/index.html",
     "thumbnail": "/projects/colehorne-midterm/screenshot.png",
     "openInNewTab": false
@@ -85,6 +93,7 @@
     "description": "Use arrow keys to move and jump",
     "student": "Alex Gilliam",
     "course": "BSSD 4150 Game Development",
+    "semester": "spring",
     "file": "https://alexgilliam126.github.io/AG-WebGLTestBuild/",
     "thumbnail": "/projects/games/ag-midterm.png",
     "openInNewTab": true
@@ -95,6 +104,7 @@
     "description": "Use mouse to click",
     "student": "Christopher Ortiz",
     "course": "BSSD 4150 Game Development",
+    "semester": "spring",
     "file": "https://play.unity.com/en/games/a833316e-4a1e-4d7f-8c7b-2805132f2193/co-bssd4150-midterm",
     "thumbnail": "/projects/games/co-midterm.png",
     "openInNewTab": true
@@ -105,6 +115,7 @@
     "description": "Use arrows to move",
     "student": "Christopher Ortiz",
     "course": "BSSD 4150 Game Development",
+    "semester": "spring",
     "file": "https://play.unity.com/en/games/3694f5c8-a499-44fa-aa53-e7dad233c917/copsrobbers",
     "thumbnail": "/projects/games/co-final.png",
     "openInNewTab": true
@@ -115,6 +126,7 @@
     "description": "Use arrows to move, Space to jump",
     "student": "Alex Gilliam",
     "course": "BSSD 4150 Game Development",
+    "semester": "spring",
     "file": "https://alexgilliam126.github.io/AG-BSSD4140-FinalGame",
     "thumbnail": "/projects/games/ag-final.png",
     "openInNewTab": true
@@ -125,6 +137,7 @@
     "description": "Use arrows to move",
     "student": "Jake Dekins",
     "course": "BSSD 4150 Game Development",
+    "semester": "spring",
     "file": "https://play.unity.com/en/games/d8ad4849-6ae4-4242-ab98-a81a6a45fa64/junkyard-jam",
     "thumbnail": "/projects/games/jd-final.png",
     "openInNewTab": true
