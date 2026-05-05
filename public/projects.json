@@ -10,13 +10,23 @@
     "openInNewTab": false
   },
   {
-    "slug": "dataviz-assignment",
+    "slug": "dataviz-assignment-8",
     "title": "USGS Earthquake Data Visualization",
     "description": "html, css, javascript (leaflet.js)",
     "student": "DJ Sandoval",
     "course": "BSSD 4540 Data Visualization",
     "file": "/projects/djsandoval-hw8/index.html",
     "thumbnail": "/projects/djsandoval-hw8/screenshot.png",
+    "openInNewTab": false
+  },
+  {
+    "slug": "dataviz-assignment-10",
+    "title": "Sunburst - Beer Data Visualization",
+    "description": "html, css, javascript (d3.js)",
+    "student": "DJ Sandoval",
+    "course": "BSSD 4540 Data Visualization",
+    "file": "https://observablehq.com/embed/09183072a4b25cea?cells=sunburst",
+    "thumbnail": "/projects/djsandoval-hw10/sunburst.png",
     "openInNewTab": false
   },
   {
