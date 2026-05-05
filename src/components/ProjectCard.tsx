@@ -10,11 +10,17 @@ export default function ProjectCard({ project }: { project: Project }) {
 
 
       <div className="project-thumb">
-        {project.thumbnail ? (
-          <img className="w-full min-h-[200px] object-cover mb-6 rounded" src={project.thumbnail} alt={project.title} />
-        ) : (
-          <div className="w-full min-h-[200px] flex items-center justify-center bg-primary/10 mb-6 rounded"><Image /></div>
-        )}
+        <a
+          href={project.openInNewTab ? project.file : `/project/${project.slug}`}
+          target={project.openInNewTab ? "_blank" : "_self"}
+           
+        >
+          {project.thumbnail ? (
+            <img className="w-full min-h-[200px] object-cover mb-6 rounded" src={project.thumbnail} alt={project.title} />
+          ) : (
+            <div className="w-full min-h-[200px] flex items-center justify-center bg-primary/10 mb-6 rounded"><Image /></div>
+          )}
+        </a>
       </div>
 
       <h1 className="text-lg font-mono">{project.title}</h1>
@@ -22,7 +28,7 @@ export default function ProjectCard({ project }: { project: Project }) {
       <p className="text-xs mt-2">{project.description}</p>
 
       <a
-        href={project.openInNewTab  ? project.file : `/project/${project.slug}`}
+        href={project.openInNewTab ? project.file : `/project/${project.slug}`}
         target={project.openInNewTab ? "_blank" : "_self"}
         className="px-4 py-2 mt-6 inline-block bg-primary text-white rounded hover:bg-primary-dark"
       >
