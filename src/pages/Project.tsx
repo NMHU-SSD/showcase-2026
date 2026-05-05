@@ -67,7 +67,7 @@ export default function ProjectPage() {
               sandbox="allow-scripts allow-forms allow-same-origin allow-modals allow-popups allow-popups-to-escape-sandbox"
               src={project.file}
               title={project.title}
-              className="w-full min-h-[700px] mx-auto border border-gray-100 rounded"
+              className="w-full min-h-dvh mx-auto border border-gray-100 rounded"
             />
           </div>
         )}
