@@ -8,6 +8,7 @@ export type Project = {
   student: string;
   description: string;
   course: string;
+  semester: string;
   file: string;
   thumbnail?: string;
   openInNewTab?: boolean;

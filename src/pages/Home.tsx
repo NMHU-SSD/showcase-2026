@@ -24,7 +24,7 @@ export default function HomePage() {
 
   return (
     <>
-                <Navbar />
+      <Navbar />
 
       <main className="w-full p-8 bg-background ">
         <h1 className="text-6xl font-mono">Software Systems Design</h1>
@@ -39,7 +39,7 @@ export default function HomePage() {
                 Fall Show 2026
               </h2>
 
-              <ProjectGrid projects={projects.filter(d => d.semester == "fall")} />
+              <ProjectGrid projects={projects.filter(d => d["semester"] == "fall")} />
 
             </div>
 
@@ -48,7 +48,7 @@ export default function HomePage() {
                 Spring Show 2026
               </h2>
 
-              <ProjectGrid projects={projects.filter(d => d.semester == "spring")} />
+              <ProjectGrid projects={projects.filter(d => d["semester"] == "spring")} />
 
             </div>
 
