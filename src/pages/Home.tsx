@@ -24,16 +24,37 @@ export default function HomePage() {
 
   return (
     <>
-      <Navbar />
+                <Navbar />
+
       <main className="w-full p-8 bg-background ">
-        <h1 className="text-6xl font-mono">Spring Show 2026</h1>
-        <p className="text-3xl font-mono font-light mt-2 mb-12">
-          Software Systems Design
-        </p>
+        <h1 className="text-6xl font-mono">Software Systems Design</h1>
         {loading ? (
           <div className="container status">Loading projects...</div>
         ) : (
-          <ProjectGrid projects={projects} />
+
+          <div className="flex flex-col mt-24 space-y-24">
+
+            <div id="fall" className="mb-20">
+              <h2 className="text-4xl font-mono font-light mt-2 mb-12">
+                Fall Show 2026
+              </h2>
+
+              <ProjectGrid projects={projects.filter(d => d.semester == "fall")} />
+
+            </div>
+
+            <div id="spring">
+              <h2 className="text-4xl font-mono font-light mb-12">
+                Spring Show 2026
+              </h2>
+
+              <ProjectGrid projects={projects.filter(d => d.semester == "spring")} />
+
+            </div>
+
+          </div>
+
+
         )}
       </main>
     </>

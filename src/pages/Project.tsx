@@ -37,7 +37,9 @@ export default function ProjectPage() {
 
   return (
     <>
+    
       <Navbar />
+
       <main className="w-full p-8 bg-background">
         <div className="flex flex-row justify-between  mb-8">
           <Link to="/" className="back-link">
