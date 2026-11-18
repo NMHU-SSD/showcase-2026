@@ -1,0 +1,31 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: rgb(132, 85, 150);
+}
+header{
+    padding: 15px;
+    background-color: rgb(202, 187, 202);
+    font: bolder;
+    color: rgb(148, 112, 67);
+}
+main{
+    padding: 10px;
+    display: block;
+    font-family: Arial, Helvetica, sans-serif;
+    color: rgb(21, 21, 19);
+}
+
+footer {
+    padding: 10px;
+    background-color: rgb(234, 225, 234);
+    margin: auto;
+    text-align: center;
+    color: aliceblue;
+}
+@media (max-width: 768px){
+    nav ul{
+    text-align: right;
+    flex-direction: column;
+}
+
+}

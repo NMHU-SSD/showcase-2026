@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Tell a Story</title>
+  <script type="text/javascript" src="./main.js" defer></script>
+  <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+
+  <div class="story">
+    <h2>Everyday Story</h2>
+
+    <form id="form">
+
+      <label for="noun">Noun:</label><br>
+      <input type="text" id="noun" name="noun" placeholder="Enter a noun" required><br><br>
+
+      <label for="adjective">Adjective:</label><br>
+      <input type="text" id="adjective" name="adjective" placeholder="Enter an adjective" required><br><br>
+
+      <label for="verb">Verb:</label><br>
+      <input type="text" id="verb" name="verb" placeholder="Enter a verb" required><br><br>
+
+      <label for="name">Name:</label><br>
+      <input type="text" id="name" name="name" placeholder="Enter a name" required><br><br>
+
+      <label for="age">Age:</label><br>
+      <input type="number" id="age" name="age" placeholder="Enter an age" required><br><br>
+
+      <button type="submit">Create your Story</button>
+      <button type="button" id="resetBtn">Reset</button>
+
+    </form>
+
+    <div id="newstory"></div>
+  </div>
+
+</body>
+</html>

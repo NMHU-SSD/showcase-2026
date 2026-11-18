@@ -141,5 +141,53 @@
     "file": "https://play.unity.com/en/games/d8ad4849-6ae4-4242-ab98-a81a6a45fa64/junkyard-jam",
     "thumbnail": "/projects/games/jd-final.png",
     "openInNewTab": true
+  },
+
+  {
+    "slug": "DM-HW5",
+    "title": "Canvas drag and drop Interactive",
+    "description": "html5 canvas and javascript (Konva.js)",
+    "student": "Dominic Montoya",
+    "course": "BSSD 3310/5310 Web Applications",
+    "semester": "fall",
+    "file": "/projects/DM-HW5/index.html",
+    "thumbnail": "/projects/DM-HW5/screenshot.png",
+    "openInNewTab": false
+  },
+  {
+    "slug": "DM-Madlibs",
+    "title": "Midterm Project",
+    "description": "Madlibs generator",
+    "student": "Dominic Montoya",
+    "course": "BSSD 3310/5310 Web Applications",
+    "semester": "fall",
+    "file": "/projects/DM-Madlibs/index.html",
+    "thumbnail": "/projects/DM-Madlibs/screenshot.png",
+    "openInNewTab": false
+  },
+  {
+    "slug": "BMH-Madlibs",
+    "title": "Midterm Project",
+    "description": "Madlibs generator",
+    "student": "Benito Martinez-Heredia",
+    "course": "BSSD 3310/5310 Web Applications",
+    "semester": "fall",
+    "file": "/projects/BMH-Madlibs/index.html",
+    "thumbnail": "/projects/BMH-Madlibs/screenshot.png",
+    "openInNewTab": false
+  },
+  {
+    "slug": "LO-Madlibs",
+    "title": "Midterm Project",
+    "description": "Madlibs generator",
+    "student": "Lydia Okojie",
+    "course": "BSSD 3310/5310 Web Applications",
+    "semester": "fall",
+    "file": "/projects/LO-Madlibs/index.html",
+    "thumbnail": "/projects/LO-Madlibs/screenshot.png",
+    "openInNewTab": false
   }
+  
+
+
 ]
